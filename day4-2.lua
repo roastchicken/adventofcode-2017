@@ -29,6 +29,13 @@ local function isAnagram( letters1, letters2 )
         end
     end
     
+    for letter in pairs( letters2 ) do
+        if not letters1[ letter ] or letters1[ letter ] ~= letters2[ letter ] then
+            anagram = false
+            break
+        end
+    end
+    
     return anagram
 end
 
