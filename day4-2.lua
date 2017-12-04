@@ -2,12 +2,6 @@ io.input( "day4-input.txt" )
 
 io.write( "Please enter your puzzle input: (end of file with Ctrl-Z)\n" )
 
-local function printTable( tbl )
-    for k, v in pairs( tbl ) do
-        print( k, v )
-    end
-end
-
 local function countLetters( str )
     local letters = {}
     for letter in string.gmatch( str, "%l" ) do
@@ -53,10 +47,8 @@ for line in io.lines() do
                 valid = false
                 break
             elseif isAnagram( letters1, letters2 ) then
-                print( word1 )
-                printTable( letters1 )
-                print( word2 )
-                printTable( letters2 )
+                -- print( word1 )
+                -- print( word2 )
                 valid = false
                 break
             end
