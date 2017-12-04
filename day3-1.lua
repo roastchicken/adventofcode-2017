@@ -1,15 +1,7 @@
 io.input( "day3-input.txt" )
 
-io.write( "Please enter your puzzle input: " )
+io.write( "Please enter your puzzle input: \n" )
 local input = io.read()
-
-local directions =
-{
-    { x = 1, y = 0 },
-    { x = 0, y = 1 },
-    { x = -1, y = 0 },
-    { x = 0, y = -1 }
-}
 
 local direction
 
